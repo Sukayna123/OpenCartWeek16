@@ -55,6 +55,18 @@ public class Navigation extends DriverMethod {
 
     @FindBy(xpath = "//i[@class=\"fa fa-exclamation-circle\"]")
     private WebElement WarningMessageForRegisteredAccount;
+    @FindBy(xpath = "//div[text()='Password confirmation does not match password!']")
+    private WebElement passwordNotMatchMessage;
+    @FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
+    private WebElement emailAddressNotValidMessage;
+
+    public WebElement getEmailAddressNotValidMessage() {
+        return emailAddressNotValidMessage;
+    }
+
+    public WebElement getPasswordNotMatchMessage() {
+        return passwordNotMatchMessage;
+    }
 
     public WebElement getMyAccount() {
         return myAccount;
