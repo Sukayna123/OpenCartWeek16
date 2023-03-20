@@ -42,6 +42,11 @@ public class DriverMethod {
         waitUntilVisible(element);
         Assert.assertTrue(element.getText().contains(value));
     }
+    public void verifyIsDisplayedMethod(WebElement element){
+        waitUntilVisible(element);
+        Assert.assertTrue(element.isDisplayed());
+    }
+
 
 
 }
