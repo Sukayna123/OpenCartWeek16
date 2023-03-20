@@ -1,2 +1,0 @@
-Feature: Registration Functionality
-  Scenario:
