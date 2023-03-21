@@ -43,5 +43,10 @@ public class DriverMethod {
         Assert.assertTrue(element.getText().contains(value));
     }
 
+    public boolean isPresent(WebElement element) {
+        waitUntilClickable(element);
+        return element.isDisplayed();
+    }
+
 
 }

@@ -60,6 +60,9 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
     private WebElement emailAddressNotValidMessage;
 
+    @FindBy(css = "div.alert.alert-danger.alert-dismissible")
+    private WebElement errorMessagePrivacyPolicy;
+
     public WebElement getEmailAddressNotValidMessage() {
         return emailAddressNotValidMessage;
     }
@@ -126,5 +129,9 @@ public class Navigation extends DriverMethod {
 
     public WebElement getWarningMessageForRegisteredAccount() {
         return WarningMessageForRegisteredAccount;
+    }
+
+    public WebElement getErrorMessagePrivacyPolicy() {
+        return errorMessagePrivacyPolicy;
     }
 }
