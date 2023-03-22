@@ -63,6 +63,20 @@ public class Navigation extends DriverMethod {
     @FindBy(css = "div.alert.alert-danger.alert-dismissible")
     private WebElement errorMessagePrivacyPolicy;
 
+    @FindBy(xpath = "//div[text()= 'First Name must be between 1 and 32 characters!']")
+    private WebElement firstNameNotValidMessage;
+
+    @FindBy(xpath = "//div[text()= 'Last Name must be between 1 and 32 characters!']")
+    private WebElement lastNameNotValidMessage;
+
+    public WebElement getFirstNameNotValidMessage() {
+        return firstNameNotValidMessage;
+    }
+
+    public WebElement getLastNameNotValidMessage() {
+        return lastNameNotValidMessage;
+    }
+
     public WebElement getEmailAddressNotValidMessage() {
         return emailAddressNotValidMessage;
     }
