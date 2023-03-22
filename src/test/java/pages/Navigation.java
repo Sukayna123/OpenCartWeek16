@@ -56,6 +56,20 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//i[@class=\"fa fa-exclamation-circle\"]")
     private WebElement WarningMessageForRegisteredAccount;
 
+    @FindBy(xpath = "//div[text()= 'Telephone must be between 3 and 32 characters!']")
+    private WebElement PhoneNumberNotValidMessage;
+
+    public WebElement getPhoneNumberNotValidMessage() {
+        return PhoneNumberNotValidMessage;
+    }
+
+    @FindBy(xpath = "//p[contains(text(),'Congratulations! Your new account has been success')]")
+    private WebElement CongratulationsMessage;
+
+    public WebElement getCongratulationsMessage() {
+        return CongratulationsMessage;
+    }
+
     public WebElement getMyAccount() {
         return myAccount;
     }
