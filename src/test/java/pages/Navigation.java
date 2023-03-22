@@ -85,6 +85,20 @@ public class Navigation extends DriverMethod {
         return passwordNotMatchMessage;
     }
 
+    @FindBy(xpath = "//div[text()= 'Telephone must be between 3 and 32 characters!']")
+    private WebElement PhoneNumberNotValidMessage;
+
+    public WebElement getPhoneNumberNotValidMessage() {
+        return PhoneNumberNotValidMessage;
+    }
+
+    @FindBy(xpath = "//p[contains(text(),'Congratulations! Your new account has been success')]")
+    private WebElement CongratulationsMessage;
+
+    public WebElement getCongratulationsMessage() {
+        return CongratulationsMessage;
+    }
+
     public WebElement getMyAccount() {
         return myAccount;
     }
