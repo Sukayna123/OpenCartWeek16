@@ -8,7 +8,7 @@ import org.testng.Assert;
 import pages.Navigation;
 import utility.BasicDriver;
 
-public class TC_RF_022 extends BasicDriver {
+public class TC_RF_020 extends BasicDriver {
     Navigation nv = new Navigation();
     @Given("Navigate opencart")
     public void navigateOpencart() {
