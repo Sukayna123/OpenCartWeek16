@@ -69,6 +69,45 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//div[text()= 'Last Name must be between 1 and 32 characters!']")
     private WebElement lastNameNotValidMessage;
 
+    @FindBy(xpath = "//div[@id='content']//p// a")
+    private WebElement loginPageLink;
+
+    @FindBy(xpath = "//h2[text()='New Customer']")
+    private WebElement loginPageHeader;
+
+    @FindBy(css = ".list-group>a")
+    private WebElement rightColumnOptions;
+
+    @FindBy(css = "div[id='content']>h1,h2,h3")
+    private WebElement rightColumnHeader;
+
+    @FindBy(xpath = "//div[@class='list-group']//a[text()='Register']")
+    private WebElement registerRightColumn;
+
+    @FindBy(xpath = "//h1[text()='Account']")
+    private WebElement registerPageHeader;
+
+    @FindBy(xpath = "//legend[text()='Your E-Mail Address']")
+    private WebElement forgottenPasswordPageHeader;
+
+    @FindBy(xpath = "//div[@class='list-group']//a[text()='Forgotten Password']")
+    private WebElement forgottenPasswordRightColumn;
+
+    @FindBy(css = "div[id='content']>h1,h2,h3")
+    private WebElement footerHeader;
+
+    @FindBy(css = "div[id='content']>h1,h2,h3")
+    private WebElement menuHeader;
+
+    @FindBy(xpath = "//a[text()='Cameras']")
+    private WebElement camerasLink;
+
+    @FindBy(css = "span#cart-total")
+    private WebElement cartTotalCurrency;
+
+    @FindBy(css = "i.fa.fa-phone")
+    private WebElement contactButton;
+
     public WebElement getFirstNameNotValidMessage() {
         return firstNameNotValidMessage;
     }
@@ -161,5 +200,57 @@ public class Navigation extends DriverMethod {
 
     public WebElement getErrorMessagePrivacyPolicy() {
         return errorMessagePrivacyPolicy;
+    }
+
+    public WebElement getLoginPageLink() {
+        return loginPageLink;
+    }
+
+    public WebElement getLoginPageHeader() {
+        return loginPageHeader;
+    }
+
+    public WebElement getRightColumnOptions() {
+        return rightColumnOptions;
+    }
+
+    public WebElement getRightColumnHeader() {
+        return rightColumnHeader;
+    }
+
+    public WebElement getRegisterRightColumn() {
+        return registerRightColumn;
+    }
+
+    public WebElement getRegisterPageHeader() {
+        return registerPageHeader;
+    }
+
+    public WebElement getForgottenPasswordPageHeader() {
+        return forgottenPasswordPageHeader;
+    }
+
+    public WebElement getForgottenPasswordRightColumn() {
+        return forgottenPasswordRightColumn;
+    }
+
+    public WebElement getFooterHeader() {
+        return footerHeader;
+    }
+
+    public WebElement getMenuHeader() {
+        return menuHeader;
+    }
+
+    public WebElement getCamerasLink() {
+        return camerasLink;
+    }
+
+    public WebElement getCartTotalCurrency() {
+        return cartTotalCurrency;
+    }
+
+    public WebElement getContactButton() {
+        return contactButton;
     }
 }
