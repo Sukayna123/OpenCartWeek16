@@ -108,6 +108,27 @@ public class Navigation extends DriverMethod {
     @FindBy(css = "i.fa.fa-phone")
     private WebElement contactButton;
 
+    public WebElement getNewsletterForSubscriptionThirdPage() {
+        return newsletterForSubscriptionThirdPage;
+    }
+
+    @FindBy(xpath = "(//a[text()='Newsletter'])[1]")
+    private WebElement newsletterForSubscriptionThirdPage;
+
+    @FindBy(xpath = "(//*[@type='radio'])[1]")
+    private WebElement newslettersSecondYesButton;
+
+    @FindBy(xpath = "(//*[@type='radio'])[2]")
+    private WebElement newslettersSecondNoButton;
+
+    public WebElement getNewslettersSecondYesButton() {
+        return newslettersSecondYesButton;
+    }
+
+    public WebElement getNewslettersSecondNoButton() {
+        return newslettersSecondNoButton;
+    }
+
     public WebElement getFirstNameNotValidMessage() {
         return firstNameNotValidMessage;
     }
