@@ -32,7 +32,7 @@ public class TC_RF_001 extends BasicDriver{
     public void ıEnterNewAccountDetailsIntoTheMandatoryFields() {
         abc.sendKeysMethod(abc.getFirstName(), "Lomana");
         abc.sendKeysMethod(abc.getLastName(), "LuaLua");
-        abc.sendKeysMethod(abc.getEmail(), "lomanalualua_323232@gmail.com");
+        abc.sendKeysMethod(abc.getEmail(), "lomanalualua_32_3232@gmail.com");
         abc.sendKeysMethod(abc.getTelephone(), "32323232");
         abc.sendKeysMethod(abc.getPassword(), "5555555");
         abc.sendKeysMethod(abc.getPasswordConfirm(), "5555555");
@@ -46,11 +46,18 @@ public class TC_RF_001 extends BasicDriver{
         abc.clickMethod(abc.getContinueButton());
     }
 
-    @Then("I should see the Account Success page")
+    @And("I should see the Account Success page")
     public void ıShouldSeeThePage() {
 
         Assert.assertTrue(abc.getCongratulationsMessage().getText().contains("Congratulations! Your new account has been successfully created!"));
     }
 
 
+    @Then("I click on the Second Continue button")
+    public void ıClickOnTheSecondContinueButton() {
+        abc.clickMethod(abc.getContinueButtonSecondPage());
+
+        Assert.assertTrue(BasicDriver.getDriver().getTitle().contains("Account"));
+
+    }
 }

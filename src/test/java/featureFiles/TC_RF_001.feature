@@ -5,4 +5,5 @@ Feature: Register Functionality
     And I click Register option
     And I enter new account details into the mandatory fields
     And I click on the Continue button
-    Then I should see the Account Success page
+    And I should see the Account Success page
+    Then I click on the Second Continue button
