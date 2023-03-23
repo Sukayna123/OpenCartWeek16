@@ -69,6 +69,27 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//div[text()= 'Last Name must be between 1 and 32 characters!']")
     private WebElement lastNameNotValidMessage;
 
+    @FindBy(xpath = "//div[@class='pull-right']")
+    private WebElement privacypolicyTextMessage;
+
+    @FindBy(css = "ul[class='breadcrumb']")
+    private WebElement brearCrumbs;
+
+    @FindBy(xpath = "//a[text()='Your Store']")
+    private WebElement header;
+
+    public WebElement getPrivacypolicyTextMessage() {
+        return privacypolicyTextMessage;
+    }
+
+    public WebElement getBrearCrumbs() {
+        return brearCrumbs;
+    }
+
+    public WebElement getHeader() {
+        return header;
+    }
+
     public WebElement getFirstNameNotValidMessage() {
         return firstNameNotValidMessage;
     }
