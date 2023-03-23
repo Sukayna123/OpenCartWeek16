@@ -14,8 +14,18 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//span[text()='My Account']")
     private WebElement myAccount;
 
+    @FindBy(xpath = "(//a[text()='Login'])[1]")
+    private WebElement login;
+
+    @FindBy(xpath = "//a[text()='Continue']")
+    private WebElement continueInNewCostumerBox;
+
+
     @FindBy(xpath = "//a[text()='Register']")
     private WebElement register;
+
+    @FindBy(xpath = "(//a[text()='Register'])[2]")
+    private WebElement registerFromRightColum;
 
     @FindBy(id = "input-firstname")
     private WebElement firstName;
@@ -68,6 +78,20 @@ public class Navigation extends DriverMethod {
 
     @FindBy(xpath = "//div[text()= 'Last Name must be between 1 and 32 characters!']")
     private WebElement lastNameNotValidMessage;
+
+    @FindBy(xpath = "//a[text()='Edit Account']")
+    private WebElement editAccount;
+
+    @FindBy(xpath = "(//div[@class='form-group required'])[1]")
+    private WebElement getElementName;
+
+    public WebElement getEditAccount() {
+        return editAccount;
+    }
+
+    public WebElement getGetElementName() {
+        return getElementName;
+    }
 
     public WebElement getFirstNameNotValidMessage() {
         return firstNameNotValidMessage;
@@ -147,5 +171,15 @@ public class Navigation extends DriverMethod {
 
     public WebElement getErrorMessagePrivacyPolicy() {
         return errorMessagePrivacyPolicy;
+    }
+
+    public WebElement getLogin() {
+        return login;
+    }
+    public WebElement getContinueInNewCostumerBox() {
+        return continueInNewCostumerBox;
+    }
+    public WebElement getRegisterFromRightColum() {
+        return registerFromRightColum;
     }
 }
