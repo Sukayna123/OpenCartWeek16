@@ -80,6 +80,28 @@ public class Navigation extends DriverMethod {
     private WebElement lastNameNotValidMessage;
 
 
+    @FindBy(xpath = "//div[@class='pull-right']")
+    private WebElement privacypolicyTextMessage;
+
+    @FindBy(css = "ul[class='breadcrumb']")
+    private WebElement brearCrumbs;
+
+    @FindBy(xpath = "//a[text()='Your Store']")
+    private WebElement header;
+
+    public WebElement getPrivacypolicyTextMessage() {
+        return privacypolicyTextMessage;
+    }
+
+    public WebElement getBrearCrumbs() {
+        return brearCrumbs;
+    }
+
+    public WebElement getHeader() {
+        return header;
+       }
+
+
     @FindBy(xpath = "//a[text()='Edit Account']")
     private WebElement editAccount;
 
@@ -152,6 +174,7 @@ public class Navigation extends DriverMethod {
 
     public WebElement getNewslettersSecondNoButton() {
         return newslettersSecondNoButton;
+
     }
 
     public WebElement getFirstNameNotValidMessage() {
