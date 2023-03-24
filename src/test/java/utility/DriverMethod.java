@@ -1,5 +1,6 @@
 package utility;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -46,6 +47,62 @@ public class DriverMethod {
     public boolean isPresent(WebElement element) {
         waitUntilClickable(element);
         return element.isDisplayed();
+    }
+
+    public void setWait(int second) {
+        try {
+            Thread.sleep(second * 1000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void clickLinks(String category) {
+        WebElement element = BasicDriver.getDriver().findElement(
+                By.xpath("//a[contains(text(),'" + category + "')]"));
+        element.click();
+
+    }
+
+    public void clickSubLinks(String category, String subcategory) {
+        WebElement element = BasicDriver.getDriver().findElement(
+                By.xpath("//a[contains(text(),'" + category + "')]"));
+        element.click();
+
+        element = BasicDriver.getDriver().findElement(
+                By.xpath("//a[contains(text(),'" + subcategory + "')]"));
+        element.click();
+
+    }
+
+    public void clickTopSubLinks(String category, String subcategory) {
+
+        WebElement element = BasicDriver.getDriver().findElement(
+                By.xpath("//span[contains(text(),'" + category + "')]"));
+        element.click();
+
+        element = BasicDriver.getDriver().findElement(
+                By.xpath("//button[contains(text(),'" + subcategory + "')]"));
+        element.click();
+
+    }
+
+    public void clickMyAccountSubLinks(String category, String subcategory) {
+
+        WebElement element = BasicDriver.getDriver().findElement(
+                By.xpath("//span[contains(text(),'" + category + "')]"));
+        element.click();
+
+        element = BasicDriver.getDriver().findElement(
+                By.xpath("//a[contains(text(),'" + subcategory + "')]"));
+        element.click();
+
+    }
+
+    public void clickTopMenuLinks(String category) {
+        WebElement element = BasicDriver.getDriver().findElement(
+                By.xpath("//span[contains(text(),'" + category + "')]"));
+        element.click();
     }
 
 
