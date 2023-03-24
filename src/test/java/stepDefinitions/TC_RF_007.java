@@ -10,12 +10,12 @@ import utility.BasicDriver;
 public class TC_RF_007 {
     Navigation navigation = new Navigation();
 
-    @Given("Navigate to OpenCart")
-    public void navigateToOpenCart() {
-        BasicDriver.getDriver().get("https://opencart.abstracta.us/");
-        BasicDriver.getDriver().manage().window().maximize();
-
-    }
+//    @Given("Navigate to OpenCart")
+//    public void navigateToOpenCart() {
+//        BasicDriver.getDriver().get("https://opencart.abstracta.us/");
+//        BasicDriver.getDriver().manage().window().maximize();
+//
+//    }
 
     @When("I click on My Account Drop menu")
     public void iClickOnMyAccountDropMenu() {

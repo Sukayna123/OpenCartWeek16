@@ -4,9 +4,9 @@ Feature: Register Functionality
     When Navigate to web site
     And  Click on My Account drop menu and click on Register
     And Enter new Account information into all the Fields First Name Last Name EMail Telephone Password Password Confirm and Privacy Policy Fields
-      | Jenny               |
+      | Jeny               |
       | Fallen              |
-      | JennyFall@gmail.com |
+      | JennyFoll@gmail.com |
       | 1234567890          |
       | jennyF              |
       | jennyF              |

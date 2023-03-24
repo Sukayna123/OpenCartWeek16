@@ -11,7 +11,7 @@ public class TC_RF_19 {
     public void enterNewAccountDetailsIntoAllTheFieldsByAddingLeadingAndTrailingSpacesToTheApplicableFields() {
         navigation.sendKeysMethod(navigation.getFirstName(),"John nn" );
         navigation.sendKeysMethod(navigation.getLastName()," Do e");
-        navigation.sendKeysMethod(navigation.getEmail()," johndoe@gmail.commmmm");
+        navigation.sendKeysMethod(navigation.getEmail()," johndoe11@gmail.commmmm");
         navigation.sendKeysMethod(navigation.getTelephone(),"1324 24233");
         navigation.sendKeysMethod(navigation.getPassword(),"sef s123");
         navigation.sendKeysMethod(navigation.getPasswordConfirm(),"sef s123");

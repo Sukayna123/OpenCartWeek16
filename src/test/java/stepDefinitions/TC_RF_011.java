@@ -22,10 +22,10 @@ public class TC_RF_011 extends BasicDriver{
         def.clickMethod(def.getMyAccount());
     }
 
-    @And("I click on Register option")
-    public void ıClickOnRegisterOption() {
-        def.clickMethod(def.getRegister());
-    }
+//    @And("I click on Register option")
+//    public void iClickOnRegisterOption() {
+//        def.clickMethod(def.getRegister());
+//    }
 
     @And("I enter new Account Details into all the Fields")
     public void ıEnterNewAccountDetailsIntoAllTheFields() {

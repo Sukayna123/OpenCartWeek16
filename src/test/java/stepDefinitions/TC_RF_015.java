@@ -32,7 +32,7 @@ public class TC_RF_015 {
     public void enterNewAccountDetailsIntoAllTheFields() {
         navigation.sendKeysMethod(navigation.getFirstName(),"Joh" );
         navigation.sendKeysMethod(navigation.getLastName(),"Doe");
-        navigation.sendKeysMethod(navigation.getEmail(),"johndoe@gmail.coomm");
+        navigation.sendKeysMethod(navigation.getEmail(),"johndoe11@gmail.coomm");
         navigation.sendKeysMethod(navigation.getTelephone(),"132424233");
         navigation.sendKeysMethod(navigation.getPassword(),"sefs12");
         navigation.sendKeysMethod(navigation.getPasswordConfirm(),"sefs12");
@@ -45,7 +45,7 @@ public class TC_RF_015 {
         navigation.clickMethod(navigation.getEditAccount());
         Assert.assertEquals(navigation.getFirstName().getAttribute("value"), "Joh");
         Assert.assertEquals(navigation.getLastName().getAttribute("value"),"Doe");
-        Assert.assertEquals(navigation.getEmail().getAttribute("value"),"johndoe@gmail.coomm");
+        Assert.assertEquals(navigation.getEmail().getAttribute("value"),"johndoe11@gmail.coomm");
         Assert.assertEquals(navigation.getTelephone().getAttribute("value"),"132424233");
 
 

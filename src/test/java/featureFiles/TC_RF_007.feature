@@ -1,6 +1,6 @@
 Feature: Register Functionality
   Scenario: Validate different ways of navigating to 'Register Account' page
-    Given Navigate to OpenCartt
+    Given Navigate to OpenCart
     When  I click on My Account Drop menu
     And   I click on Register option
     And   I click on my account drop menu
