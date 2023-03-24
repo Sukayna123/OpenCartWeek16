@@ -93,7 +93,7 @@ public class Navigation extends DriverMethod {
     public WebElement getGetElementName() {
         return getElementName;
     }
-=======
+
     @FindBy(xpath = "//div[@id='content']//p// a")
     private WebElement loginPageLink;
 
@@ -257,7 +257,7 @@ public class Navigation extends DriverMethod {
     }
     public WebElement getRegisterFromRightColum() {
         return registerFromRightColum;
-
+    }
     public WebElement getLoginPageLink() {
         return loginPageLink;
     }
