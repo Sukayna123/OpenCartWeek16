@@ -70,6 +70,10 @@ public class Navigation extends DriverMethod {
     @FindBy(xpath = "//div[text()='E-Mail Address does not appear to be valid!']")
     private WebElement emailAddressNotValidMessage;
 
+//    <div class="text-danger">Password must be between 4 and 20 characters!</div>
+    @FindBy(xpath = "//div[text()='Password must be between 4 and 20 characters!']")
+    private WebElement passwordErrorMessage;
+
     @FindBy(css = "div.alert.alert-danger.alert-dismissible")
     private WebElement errorMessagePrivacyPolicy;
 
@@ -332,5 +336,9 @@ public class Navigation extends DriverMethod {
     public WebElement getContactButton() {
         return contactButton;
 
+    }
+
+    public WebElement getPasswordErrorMessage() {
+        return passwordErrorMessage;
     }
 }
